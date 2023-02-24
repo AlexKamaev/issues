@@ -22,6 +22,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: node version
         run: node -v
       - name: Run TestCafe
