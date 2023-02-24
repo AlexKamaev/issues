@@ -25,4 +25,4 @@ jobs:
       - name: Run TestCafe
         uses: DevExpress/testcafe-action@v0.0.6
         with:
-          args: chrome test.js
+          args: chrome:headless test.js
