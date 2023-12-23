@@ -1,7 +1,10 @@
-copyied from https://www.dofactory.com/csharp-coding-standards
+Naming Conventions based on https://www.dofactory.com/csharp-coding-standards
+
+Formatting Conventions based on VS settings
 
 # C# Coding Standards and Best Practices
-## Class Names
+## Naming Conventions
+### Class Names
 
 `DO` use PascalCasing for class names and method names.
 ```C#
@@ -15,7 +18,7 @@ public class ClientActivity {
 }
 ```
 
-## Variable Names
+### Variable Names
 `DO` use camelCasing for local variables and method arguments.
 ```C#
 public class UserLog {
@@ -36,7 +39,7 @@ int iCounter;
 string strName;
 ```
 
-## Constants
+### Constants
 Need to discuss. The original document stands for:
 
 `DO NOT` use Screaming Caps for constants or readonly variables.
@@ -52,7 +55,7 @@ Personally I like to use capitalized constants names with words separated with `
 public static const string SHIPPING_TYPE = "DropShip";
 ```
 
-## Abbreviations
+### Abbreviations
 `AVOID` using Abbreviations.
 
 Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
@@ -78,7 +81,7 @@ FtpTransfer ftpTransfer;
 UIControl uiControl;
 ```
 
-## No Underscores
+### No Underscores
 `DO NOT` use Underscores in identifiers.
 
 Exception: you can prefix private static variables with an underscore.
@@ -97,7 +100,7 @@ public TimeSpan time_Left;
 private DateTime _registrationDate;
 ```
 
-## Type Names
+### Type Names
 `DO USE` predefined type names instead of system type names like Int16, Single, UInt64, etc.
 ```C#
 // Correct
@@ -111,11 +114,11 @@ Int32 lastIndex;
 Boolean isSaved;
 ```
 
-## Implicit Types
+### Implicit Types
 `DO USE` implicit type var for local variable declarations.
 
 Exception: primitive types (int, string, double, etc) use predefined names.
-```CS
+```C#
 var stream = File.Create(path);
 var customers = new Dictionary();
  
@@ -125,10 +128,10 @@ string timeSheet;
 bool isCompleted;
 ```
 
-## Noun Class Names
+### Noun Class Names
 `DO USE` noun or noun phrases to name a class.
 
-```CS
+```C#
 public class Employee {
 }
 
@@ -153,7 +156,7 @@ public interface IGroupable {
 }
 ```
 
-## Curly Brackets
+### Curly Brackets
 `DO NOT` vertically align curly brackets.
 
 ```C#
@@ -172,7 +175,7 @@ class Program {
 }
 ```
 
-## Member variables
+### Member variables
 `DO` declare all member variables at the top of a class, with static variables at the very top (need to check this statement with current approach).
 ```C#
 // Correct
@@ -188,6 +191,76 @@ public class Account {
     // Constructor
     public Account() {
         // ...
+    }
+}
+```
+## Formatting Conventions
+### Place open brace on new line for types `VS` `uncheck`
+```C#
+// Correct
+class C {
+}
+
+// Incorrect
+class C
+{
+}
+```
+### Place open brace on new line for methods and local functions `VS` `uncheck`
+```C#
+// Correct
+void Goo() {
+    Console.WriteLine();
+
+    int LocalFunction(int x) {
+        return 2 * x;
+    }
+
+    Console.ReadLine();
+}
+
+// Incorrect
+void Goo()
+{
+    Console.WriteLine();
+
+    int LocalFunction(int x)
+    {
+        return 2 * x;
+    }
+
+    Console.ReadLine();
+}
+```
+
+### Place open brace on new line for properties, indexers and events `VS` `uncheck`
+```C#
+// Correct
+public int Property {
+    ...
+}
+
+// Incorrect
+public int Property
+{
+    ...
+}
+```
+
+### Place open brace on new line for property, indexer and event accessors `VS` `uncheck`
+```C#
+// Correct
+public int Property {
+    get {
+        return 42;
+    }
+}
+
+// Incorrect
+public int Property {
+    get
+    {
+        return 42;
     }
 }
 ```
