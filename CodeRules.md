@@ -194,7 +194,42 @@ public class Account {
     }
 }
 ```
-## Formatting Conventions
+## Formatting Conventions - Indentation
+### Indent block contents `VS` `check`
+```C#
+// four whitespaces not tab
+int Method() {
+    int x;
+    int y;
+}
+```
+
+### Indent open and close braces `VS` `uncheck`
+```C#
+int Method() {
+    int x;
+    int y;
+}
+```
+### Indent case content `VS` `check`
+### Indent case content (when block) `VS` `uncheck`
+### Indent case labels `VS` `check`
+
+```C#
+switch (goo) {
+    case 1: {
+        break;
+    }
+    case 2:
+        break;
+}
+```
+
+### VS Screenshots
+![image](https://github.com/AlexKamaev/issues/assets/1678902/8100539c-556d-46f2-968b-4f379e4c1b65)
+
+
+## Formatting Conventions - New Lines
 ### Place open brace on new line for types `VS` `uncheck`
 ```C#
 // Correct
