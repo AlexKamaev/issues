@@ -1,6 +1,6 @@
 Naming Conventions based on https://www.dofactory.com/csharp-coding-standards
 
-Formatting Conventions based on VS settings
+Formatting Conventions based on VS settings and my personal preferences
 
 # C# Coding Standards and Best Practices
 ## Naming Conventions
