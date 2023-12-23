@@ -386,7 +386,7 @@ Func<int, int> f = x =>
 };
 ```
 
-### [Place "else" on new line `VS` `check`
+### Place "else" on new line `VS` `check`
 ```C#
 // Incorrect
 if (false) {
@@ -459,4 +459,39 @@ var q = from a in e from b in e
 ```
 ### VS Settings screenshots
 ![image](https://github.com/AlexKamaev/issues/assets/1678902/9ec11da3-6f26-41da-9891-d390748c2db6)
+
+## Formatting Conventions - Spacing
+### Insert space between method name and its opening parenthesis `VS` `check`
+### Insert space within parameter list parentheses `VS` `uncheck`
+### Insert space within empty parameter list parentheses `VS` `uncheck`
+
+### Insert space between called method name and its opening parentheses `VS` `uncheck`
+### Insert space withing argument lsit parentheses `VS` `uncheck`
+### Insert space within empty argument list parentheses `VS` `uncheck`
+
+```C#
+void Goo () {
+    Goo(1);
+}
+
+void Goo (int x) {
+    Goo();
+}
+```
+
+### Insert space after keywords in control flow statements `VS` `check`
+```C#
+// Correct
+for (int i; i < x; i++) {
+}
+
+// Incorrect
+for(int i; i < x; i++) {
+}
+```
+### Insert space within parentheses of expressions `VS` `uncheck`
+### Insert space within parentheses of type casts `VS` `uncheck`
+### Insert spaces within parentheses of control flow statements `VS` `uncheck`
+### Insert space after cast `VS` `uncheck`
+### Ignore spaces in declaration statements `VS` `uncheck`
 
