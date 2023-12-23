@@ -264,3 +264,161 @@ public int Property {
     }
 }
 ```
+
+### Place open brace on new line for anonymous methods `VS` `uncheck`
+```C#
+// Correct
+D d = delegate (int x) {
+    return 2 * x;
+}
+
+// Incorrect
+D d = delegate (int x)
+{
+    return 2 * x;
+}
+```
+
+### Place open brace on new line for control blocks `VS` `uncheck`
+```C#
+// Correct
+for (int i; i < 10; i++) {
+}
+
+// Incorrect
+for (int i; i < 10; i++)
+{
+}
+```
+
+### Place open brace on new line for anonymous types `VS` `uncheck`
+```C#
+// Correct
+var z = new {
+    A = 3,
+    B = 4
+}
+
+// Incorrect
+var z = new
+{
+    A = 3,
+    B = 4
+}
+```
+
+### Place open brace on new line for object, collection, array, and with initializers `VS` `uncheck`
+```C#
+// Correct
+var z = new B() {
+    A = 3,
+    B = 4
+};
+
+var collectionVariable = new List<int> {
+}
+
+var arrayVariable = new int[] {
+}
+
+// Incorrect
+var z = new B()
+{
+    A = 3,
+    B = 4
+};
+
+var collectionVariable = new List<int>
+{
+}
+
+var arrayVariable = new int[]
+{
+}
+```
+
+### Place open brace on new line for lambda expression `VS` `uncheck`
+```C#
+// Correct
+Func<int, int> f = x => {
+    return 2 * x;
+};
+
+// Incorrect
+Func<int, int> f = x =>
+{
+    return 2 * x;
+};
+```
+
+### [Place "else" on new line `VS` `check`
+```C#
+// Incorrect
+if (false) {
+} else {
+}
+
+// Incorrect
+if (false) {
+}
+else {
+}
+
+```
+
+### Place "catch" and "finally" on new line `VS` `check`
+```C#
+// Correct
+try {
+}
+catch (Exception e) {
+}
+finally {
+}
+
+// Incorrect
+try {
+} catch (Exception e) {
+} finally {
+}
+```
+
+### Place members in object initializers on new line `VS` `check`
+```C#
+// Correct
+var z = new B() {
+    A = 3,
+    B = 4
+}
+
+// Incorrect
+var z = new B() {
+    A = 3, B = 4
+}
+```
+
+### Place members in anonymous types on new line `VS` `check`
+```C#
+// Correct
+var z = new {
+    A = 3,
+    B = 4
+}
+
+// Incorrect
+var z = new {
+    A = 3, B = 4
+}
+```
+
+### Place query expression clauses on new line `VS` `uncheck`
+```C#
+// Correct
+var q = from a in e
+        from b in e
+        select a * b;
+
+// Incorrect
+var q = from a in e from b in e
+        select a * b;
+```
