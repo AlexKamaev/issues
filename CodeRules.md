@@ -422,3 +422,6 @@ var q = from a in e
 var q = from a in e from b in e
         select a * b;
 ```
+### VS Settings screenshots
+![image](https://github.com/AlexKamaev/issues/assets/1678902/9ec11da3-6f26-41da-9891-d390748c2db6)
+
