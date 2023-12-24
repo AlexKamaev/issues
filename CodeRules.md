@@ -707,3 +707,73 @@ dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
 ```
+## Formatted code example
+```C#
+using System;
+
+public interface IMyInterfacable {
+    string Name {
+        get; set;
+    }
+}
+
+public class A {
+    int id;
+    string name;
+
+    public A () {
+        id = 1;
+        name = "a";
+
+        DoNothing();
+    }
+
+    public void DoNothing () {
+    }
+}
+
+class B : A {
+    const int MaxIntergerValue = 10;
+}
+
+public class Class1 {
+    public Class1 () {
+    }
+
+    public void ForLoop () {
+        for (int i = 0; i < 100; i++) {
+            Console.WriteLine(i);
+        }
+
+    }
+
+    public void SwitchStatement (bool p) {
+        switch (p) {
+            case true:
+                return;
+            case false:
+                return;
+        }
+    }
+
+    public void TryCatch () {
+        try {
+            throw new Exception();
+        }
+        catch (Exception e) {
+            Console.WriteLine("exception");
+        }
+        finally {
+            // Do cleanup
+        }
+    }
+    public void IfElse (bool p) {
+        if (p) {
+            Console.WriteLine(true);
+        }
+        else {
+            Console.WriteLine(false);
+        }
+    }
+}
+```
