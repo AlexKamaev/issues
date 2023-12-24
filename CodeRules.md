@@ -9,10 +9,10 @@ Formatting Conventions based on VS settings and my personal preferences
 :ballot_box_with_check: use PascalCasing for class names and method names.
 ```C#
 public class ClientActivity {
-    public void ClearStatistics() {
+    public void ClearStatistics () {
         //...
     }
-    public void CalculateStatistics() {
+    public void CalculateStatistics () {
         //...
     }
 }
@@ -22,7 +22,7 @@ public class ClientActivity {
 :ballot_box_with_check: use camelCasing for local variables and method arguments.
 ```C#
 public class UserLog {
-    public void Add(LogEvent logEvent) {
+    public void Add (LogEvent logEvent) {
         int itemCount = logEvent.Items.Count;
         // ...
     }
@@ -163,14 +163,14 @@ public interface IGroupable {
 // Incorrect
 class Program
 {
-    static void Main(string[] args)
+    static void Main (string[] args)
     {
     }
 }
 
 // Correct
 class Program {
-    static void Main(string[] args) {
+    static void Main (string[] args) {
     }
 }
 ```
@@ -189,7 +189,7 @@ public class Account {
     public decimal Balance { get; set; }
  
     // Constructor
-    public Account() {
+    public Account () {
         // ...
     }
 }
@@ -198,18 +198,33 @@ public class Account {
 ### :ballot_box_with_check: Indent block contents `VS`
 ```C#
 // four whitespaces not tab
-int Method() {
+// Correct
+int Method () {
     int x;
     int y;
 }
+
+// Incorrect
+int Method () {
+int x;
+int y;
+}
+
 ```
 
 ### :x: Indent open and close braces `VS`
 ```C#
-int Method() {
+// Correct
+int Method () {
     int x;
     int y;
 }
+
+// Incorrect
+int Method () {
+    int x;
+    int y;
+    }
 ```
 ### :ballot_box_with_check: Indent case content `VS`
 ### :x: Indent case content (when block) `VS`
@@ -247,7 +262,7 @@ class C
 void Goo() {
     Console.WriteLine();
 
-    int LocalFunction(int x) {
+    int LocalFunction (int x) {
         return 2 * x;
     }
 
@@ -259,7 +274,7 @@ void Goo()
 {
     Console.WriteLine();
 
-    int LocalFunction(int x)
+    int LocalFunction (int x)
     {
         return 2 * x;
     }
