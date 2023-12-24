@@ -707,6 +707,37 @@ dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
 ```
+## Personal style preferences. Cannot set `dotnet format` for these purposes =(
+### `DO` add empty line after variable declarations and assignements
+```C#
+int a = 0;
+int b = 1;
+
+Console.WriteLine(0);
+```
+### `DO` add an empty line after block (for, while, if, else, try, catch, etc) section
+```C#
+if (true) {
+    Console.WriteLine(1);
+    Console.WriteLine(2);
+}
+
+Console.WriteLine(3);
+```
+### `DO` add an empty line between properties and methods
+```C#
+    public int Number () {
+        get; set;
+    }
+
+    public void Method1 () {
+        ...
+    }
+
+    public void Method2 () {
+        ...
+    }
+```
 ## Formatted code example
 ```C#
 using System;
