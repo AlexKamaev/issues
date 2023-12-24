@@ -204,16 +204,16 @@ int Method() {
 }
 ```
 
-### Indent open and close braces `VS` `uncheck`
+### Indent open and close braces `VS` :x:
 ```C#
 int Method() {
     int x;
     int y;
 }
 ```
-### Indent case content `VS` `check`
-### Indent case content (when block) `VS` `uncheck`
-### Indent case labels `VS` `check`
+### Indent case content `VS` :ballot_box_with_check:
+### Indent case content (when block) `VS` :x:
+### Indent case labels `VS` :ballot_box_with_check:
 
 ```C#
 switch (goo) {
@@ -230,7 +230,7 @@ switch (goo) {
 
 
 ## Formatting Conventions - New Lines
-### Place open brace on new line for types `VS` `uncheck`
+### Place open brace on new line for types `VS` :x:
 ```C#
 // Correct
 class C {
@@ -241,7 +241,7 @@ class C
 {
 }
 ```
-### Place open brace on new line for methods and local functions `VS` `uncheck`
+### Place open brace on new line for methods and local functions `VS` :x:
 ```C#
 // Correct
 void Goo() {
@@ -268,7 +268,7 @@ void Goo()
 }
 ```
 
-### Place open brace on new line for properties, indexers and events `VS` `uncheck`
+### Place open brace on new line for properties, indexers and events `VS` :x:
 ```C#
 // Correct
 public int Property {
@@ -282,7 +282,7 @@ public int Property
 }
 ```
 
-### Place open brace on new line for property, indexer and event accessors `VS` `uncheck`
+### Place open brace on new line for property, indexer and event accessors `VS` :x:
 ```C#
 // Correct
 public int Property {
@@ -300,7 +300,7 @@ public int Property {
 }
 ```
 
-### Place open brace on new line for anonymous methods `VS` `uncheck`
+### Place open brace on new line for anonymous methods `VS` :x:
 ```C#
 // Correct
 D d = delegate (int x) {
@@ -314,7 +314,7 @@ D d = delegate (int x)
 }
 ```
 
-### Place open brace on new line for control blocks `VS` `uncheck`
+### Place open brace on new line for control blocks `VS` :x:
 ```C#
 // Correct
 for (int i; i < 10; i++) {
@@ -326,7 +326,7 @@ for (int i; i < 10; i++)
 }
 ```
 
-### Place open brace on new line for anonymous types `VS` `uncheck`
+### Place open brace on new line for anonymous types `VS` :x:
 ```C#
 // Correct
 var z = new {
@@ -342,7 +342,7 @@ var z = new
 }
 ```
 
-### Place open brace on new line for object, collection, array, and with initializers `VS` `uncheck`
+### Place open brace on new line for object, collection, array, and with initializers `VS` :x:
 ```C#
 // Correct
 var z = new B() {
@@ -372,7 +372,7 @@ var arrayVariable = new int[]
 }
 ```
 
-### Place open brace on new line for lambda expression `VS` `uncheck`
+### Place open brace on new line for lambda expression `VS` :x:
 ```C#
 // Correct
 Func<int, int> f = x => {
@@ -386,7 +386,7 @@ Func<int, int> f = x =>
 };
 ```
 
-### Place "else" on new line `VS` `check`
+### Place "else" on new line `VS` :ballot_box_with_check:
 ```C#
 // Incorrect
 if (false) {
@@ -401,7 +401,7 @@ else {
 
 ```
 
-### Place "catch" and "finally" on new line `VS` `check`
+### Place "catch" and "finally" on new line `VS` :ballot_box_with_check:
 ```C#
 // Correct
 try {
@@ -418,7 +418,7 @@ try {
 }
 ```
 
-### Place members in object initializers on new line `VS` `check`
+### Place members in object initializers on new line `VS` :ballot_box_with_check:
 ```C#
 // Correct
 var z = new B() {
@@ -432,7 +432,7 @@ var z = new B() {
 }
 ```
 
-### Place members in anonymous types on new line `VS` `check`
+### Place members in anonymous types on new line `VS` :ballot_box_with_check:
 ```C#
 // Correct
 var z = new {
@@ -446,7 +446,7 @@ var z = new {
 }
 ```
 
-### Place query expression clauses on new line `VS` `uncheck`
+### Place query expression clauses on new line `VS` :x:
 ```C#
 // Correct
 var q = from a in e
@@ -461,13 +461,13 @@ var q = from a in e from b in e
 ![image](https://github.com/AlexKamaev/issues/assets/1678902/9ec11da3-6f26-41da-9891-d390748c2db6)
 
 ## Formatting Conventions - Spacing
-### Insert space between method name and its opening parenthesis `VS` `check`
-### Insert space within parameter list parentheses `VS` `uncheck`
-### Insert space within empty parameter list parentheses `VS` `uncheck`
+### Insert space between method name and its opening parenthesis `VS` :ballot_box_with_check:
+### Insert space within parameter list parentheses `VS` :x:
+### Insert space within empty parameter list parentheses `VS` :x:
 
-### Insert space between called method name and its opening parentheses `VS` `uncheck`
-### Insert space withing argument lsit parentheses `VS` `uncheck`
-### Insert space within empty argument list parentheses `VS` `uncheck`
+### Insert space between called method name and its opening parentheses `VS` :x:
+### Insert space withing argument lsit parentheses `VS` :x:
+### Insert space within empty argument list parentheses `VS` :x:
 
 ```C#
 void Goo () {
@@ -479,7 +479,7 @@ void Goo (int x) {
 }
 ```
 
-### Insert space after keywords in control flow statements `VS` `check`
+### Insert space after keywords in control flow statements `VS` :ballot_box_with_check:
 ```C#
 // Correct
 for (int i; i < x; i++) {
@@ -489,7 +489,7 @@ for (int i; i < x; i++) {
 for(int i; i < x; i++) {
 }
 ```
-### Insert space within parentheses of expressions `VS` `uncheck`
+### Insert space within parentheses of expressions `VS` :x:
 ```C#
 // Correct
 var z = (x * y) - ((y - x) * 3);
@@ -497,7 +497,7 @@ var z = (x * y) - ((y - x) * 3);
 // Incorrect
 var z = ( x * y ) - ( ( y - x ) * 3 );
 ```
-### Insert space within parentheses of type casts `VS` `uncheck`
+### Insert space within parentheses of type casts `VS` :x:
 ```C#
 // Correct
 int y = (int)x;
@@ -505,7 +505,7 @@ int y = (int)x;
 // Incorrect
 int y = ( int )x;
 ```
-### Insert spaces within parentheses of control flow statements `VS` `uncheck`
+### Insert spaces within parentheses of control flow statements `VS` :x:
 ```C#
 // Correct
 for (int i; i < x; i++) {
@@ -515,7 +515,7 @@ for (int i; i < x; i++) {
 for ( int i; i < x; i++ ) {
 }
 ```
-### Insert space after cast `VS` `uncheck`
+### Insert space after cast `VS` :x:
 ```C#
 // Correct
 int y = (int)x;
@@ -523,7 +523,7 @@ int y = (int)x;
 // Incorrect
 int y = (int) x;
 ```
-### Ignore spaces in declaration statements `VS` `uncheck`
+### Ignore spaces in declaration statements `VS` :x:
 ```C#
 // However, I would like to enable this option
 // Correct
