@@ -614,6 +614,10 @@ for (int i ; i < x ; i++)
 return x * (x - y);
 ```
 
+### VS Settings Screenshots
+![image](https://github.com/AlexKamaev/issues/assets/1678902/8ff583b8-7e99-4084-b439-7dc0dbfcb19e)
+
+
 ## Formatting Conventions - Wrapping
 
 ### ✔ Leave block on single line
