@@ -28,7 +28,7 @@ public class UserLog {
     }
 }
 ```
-`DO NOT` use Hungarian notation or any other type identification in identifiers.
+:x: do not use Hungarian notation or any other type identification in identifiers.
 ```C#
 // Correct
 int counter;
@@ -42,7 +42,7 @@ string strName;
 ### Constants
 Need to discuss. The original document stands for:
 
-`DO NOT` use Screaming Caps for constants or readonly variables.
+:x: do not use Screaming Caps for constants or readonly variables.
 ```C#
 // Correct
 public static const string ShippingType = "DropShip";
@@ -56,7 +56,7 @@ public static const string SHIPPING_TYPE = "DropShip";
 ```
 
 ### Abbreviations
-`AVOID` using Abbreviations.
+:x: avoid using Abbreviations.
 
 Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
 ```C#
@@ -82,7 +82,7 @@ UIControl uiControl;
 ```
 
 ### No Underscores
-`DO NOT` use Underscores in identifiers.
+:x: do not use Underscores in identifiers.
 
 Exception: you can prefix private static variables with an underscore.
 
@@ -157,7 +157,7 @@ public interface IGroupable {
 ```
 
 ### Curly Brackets
-`DO NOT` vertically align curly brackets.
+:x: do not vertically align curly brackets.
 
 ```C#
 // Incorrect
