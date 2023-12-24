@@ -6,7 +6,7 @@ Formatting Conventions based on VS settings and my personal preferences
 ## Naming Conventions
 ### Class Names
 
-:ballot_box_with_check: `DO` use PascalCasing for class names and method names.
+:ballot_box_with_check: use PascalCasing for class names and method names.
 ```C#
 public class ClientActivity {
     public void ClearStatistics() {
@@ -19,7 +19,7 @@ public class ClientActivity {
 ```
 
 ### Variable Names
-`DO` use camelCasing for local variables and method arguments.
+:ballot_box_with_check: use camelCasing for local variables and method arguments.
 ```C#
 public class UserLog {
     public void Add(LogEvent logEvent) {
@@ -74,7 +74,7 @@ XmlDocument xmlDocument;
 FtpHelper ftpHelper;
 UriPart uriPart;
 ```
-`DO` use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase).
+:ballot_box_with_check: use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase).
 ```C#
 HtmlHelper htmlHelper;
 FtpTransfer ftpTransfer;
@@ -101,7 +101,7 @@ private DateTime _registrationDate;
 ```
 
 ### Type Names
-`DO USE` predefined type names instead of system type names like Int16, Single, UInt64, etc.
+:ballot_box_with_check: use predefined type names instead of system type names like Int16, Single, UInt64, etc.
 ```C#
 // Correct
 string firstName;
@@ -115,7 +115,7 @@ Boolean isSaved;
 ```
 
 ### Implicit Types
-`DO USE` implicit type var for local variable declarations.
+:ballot_box_with_check: use implicit type var for local variable declarations.
 
 Exception: primitive types (int, string, double, etc) use predefined names.
 ```C#
@@ -129,7 +129,7 @@ bool isCompleted;
 ```
 
 ### Noun Class Names
-`DO USE` noun or noun phrases to name a class.
+:ballot_box_with_check: use noun or noun phrases to name a class.
 
 ```C#
 public class Employee {
@@ -144,7 +144,7 @@ public class DocumentCollection {
 ```
 
 ## Interfaces
-`DP` prefix interfaces with the letter I.  Interface names are noun (phrases) or adjectives.
+:ballot_box_with_check: use prefix interfaces with the letter I.  Interface names are noun (phrases) or adjectives.
 ```C#
 public interface IShape {
 }
@@ -176,7 +176,7 @@ class Program {
 ```
 
 ### Member variables
-`DO` declare all member variables at the top of a class, with static variables at the very top (need to check this statement with current approach).
+:ballot_box_with_check: declare all member variables at the top of a class, with static variables at the very top (need to check this statement with current approach).
 ```C#
 // Correct
 public class Account {
