@@ -722,7 +722,7 @@ dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
 ```
-## Personal style preferences. Cannot set `dotnet format` for these purposes =(
+## Personal style preferences. Cannot set up `dotnet format` for these purposes =(
 ### :ballot_box_with_check: add an empty line after variable declarations and assignements
 ```C#
 int a = 0;
