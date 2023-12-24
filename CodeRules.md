@@ -6,7 +6,7 @@ Formatting Conventions based on VS settings and my personal preferences
 ## Naming Conventions
 ### Class Names
 
-`DO` use PascalCasing for class names and method names.
+:ballot_box_with_check: `DO` use PascalCasing for class names and method names.
 ```C#
 public class ClientActivity {
     public void ClearStatistics() {
