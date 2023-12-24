@@ -204,16 +204,16 @@ int Method() {
 }
 ```
 
-### Indent open and close braces `VS` :x:
+### :x: Indent open and close braces `VS`
 ```C#
 int Method() {
     int x;
     int y;
 }
 ```
-### Indent case content `VS` :ballot_box_with_check:
-### Indent case content (when block) `VS` :x:
-### Indent case labels `VS` :ballot_box_with_check:
+### :ballot_box_with_check: Indent case content `VS`
+### :x: Indent case content (when block) `VS`
+### :ballot_box_with_check: Indent case labels `VS`
 
 ```C#
 switch (goo) {
@@ -230,7 +230,7 @@ switch (goo) {
 
 
 ## Formatting Conventions - New Lines
-### Place open brace on new line for types `VS` :x:
+### :x: Place open brace on new line for types `VS`
 ```C#
 // Correct
 class C {
@@ -241,7 +241,7 @@ class C
 {
 }
 ```
-### Place open brace on new line for methods and local functions `VS` :x:
+### :x: Place open brace on new line for methods and local functions `VS`
 ```C#
 // Correct
 void Goo() {
@@ -268,7 +268,7 @@ void Goo()
 }
 ```
 
-### Place open brace on new line for properties, indexers and events `VS` :x:
+### :x: Place open brace on new line for properties, indexers and events `VS`
 ```C#
 // Correct
 public int Property {
@@ -282,7 +282,7 @@ public int Property
 }
 ```
 
-### Place open brace on new line for property, indexer and event accessors `VS` :x:
+### :x: Place open brace on new line for property, indexer and event accessors `VS`
 ```C#
 // Correct
 public int Property {
@@ -300,7 +300,7 @@ public int Property {
 }
 ```
 
-### Place open brace on new line for anonymous methods `VS` :x:
+### :x: Place open brace on new line for anonymous methods `VS`
 ```C#
 // Correct
 D d = delegate (int x) {
@@ -314,7 +314,7 @@ D d = delegate (int x)
 }
 ```
 
-### Place open brace on new line for control blocks `VS` :x:
+### :x: Place open brace on new line for control blocks `VS`
 ```C#
 // Correct
 for (int i; i < 10; i++) {
@@ -326,7 +326,7 @@ for (int i; i < 10; i++)
 }
 ```
 
-### Place open brace on new line for anonymous types `VS` :x:
+### :x: Place open brace on new line for anonymous types `VS`
 ```C#
 // Correct
 var z = new {
@@ -342,7 +342,7 @@ var z = new
 }
 ```
 
-### Place open brace on new line for object, collection, array, and with initializers `VS` :x:
+### :x: Place open brace on new line for object, collection, array, and with initializers `VS`
 ```C#
 // Correct
 var z = new B() {
@@ -372,7 +372,7 @@ var arrayVariable = new int[]
 }
 ```
 
-### Place open brace on new line for lambda expression `VS` :x:
+### :x: Place open brace on new line for lambda expression `VS`
 ```C#
 // Correct
 Func<int, int> f = x => {
@@ -386,7 +386,7 @@ Func<int, int> f = x =>
 };
 ```
 
-### Place "else" on new line `VS` :ballot_box_with_check:
+### :ballot_box_with_check: Place "else" on new line `VS`
 ```C#
 // Incorrect
 if (false) {
@@ -401,7 +401,7 @@ else {
 
 ```
 
-### Place "catch" and "finally" on new line `VS` :ballot_box_with_check:
+### :ballot_box_with_check: Place "catch" and "finally" on new line `VS`
 ```C#
 // Correct
 try {
@@ -418,7 +418,7 @@ try {
 }
 ```
 
-### Place members in object initializers on new line `VS` :ballot_box_with_check:
+### :ballot_box_with_check: Place members in object initializers on new line `VS`
 ```C#
 // Correct
 var z = new B() {
@@ -432,7 +432,7 @@ var z = new B() {
 }
 ```
 
-### Place members in anonymous types on new line `VS` :ballot_box_with_check:
+### :ballot_box_with_check: Place members in anonymous types on new line `VS`
 ```C#
 // Correct
 var z = new {
@@ -446,7 +446,7 @@ var z = new {
 }
 ```
 
-### Place query expression clauses on new line `VS` :x:
+### :ballot_box_with_check: Place query expression clauses on new line `VS`
 ```C#
 // Correct
 var q = from a in e
@@ -461,13 +461,13 @@ var q = from a in e from b in e
 ![image](https://github.com/AlexKamaev/issues/assets/1678902/9ec11da3-6f26-41da-9891-d390748c2db6)
 
 ## Formatting Conventions - Spacing
-### Insert space between method name and its opening parenthesis `VS` :ballot_box_with_check:
-### Insert space within parameter list parentheses `VS` :x:
-### Insert space within empty parameter list parentheses `VS` :x:
+### :ballot_box_with_check: Insert space between method name and its opening parenthesis `VS`
+### :x: Insert space within parameter list parentheses `VS`
+### :x: Insert space within empty parameter list parentheses `VS`
 
-### Insert space between called method name and its opening parentheses `VS` :x:
-### Insert space withing argument lsit parentheses `VS` :x:
-### Insert space within empty argument list parentheses `VS` :x:
+### :x: Insert space between called method name and its opening parentheses `VS`
+### :x: Insert space withing argument lsit parentheses `VS`
+### :x: Insert space within empty argument list parentheses `VS`
 
 ```C#
 void Goo () {
@@ -479,7 +479,7 @@ void Goo (int x) {
 }
 ```
 
-### Insert space after keywords in control flow statements `VS` :ballot_box_with_check:
+### :ballot_box_with_check: Insert space after keywords in control flow statements `VS`
 ```C#
 // Correct
 for (int i; i < x; i++) {
@@ -489,7 +489,7 @@ for (int i; i < x; i++) {
 for(int i; i < x; i++) {
 }
 ```
-### Insert space within parentheses of expressions `VS` :x:
+### :x: Insert space within parentheses of expressions `VS`
 ```C#
 // Correct
 var z = (x * y) - ((y - x) * 3);
@@ -497,7 +497,7 @@ var z = (x * y) - ((y - x) * 3);
 // Incorrect
 var z = ( x * y ) - ( ( y - x ) * 3 );
 ```
-### Insert space within parentheses of type casts `VS` :x:
+### :x: Insert space within parentheses of type casts `VS`
 ```C#
 // Correct
 int y = (int)x;
@@ -505,7 +505,7 @@ int y = (int)x;
 // Incorrect
 int y = ( int )x;
 ```
-### Insert spaces within parentheses of control flow statements `VS` :x:
+### :x: Insert spaces within parentheses of control flow statements `VS`
 ```C#
 // Correct
 for (int i; i < x; i++) {
@@ -515,7 +515,7 @@ for (int i; i < x; i++) {
 for ( int i; i < x; i++ ) {
 }
 ```
-### Insert space after cast `VS` :x:
+### :x: Insert space after cast `VS`
 ```C#
 // Correct
 int y = (int)x;
@@ -534,9 +534,9 @@ string text = "Start";
 int    index = 0;
 string text = "Start";
 ```
-### 𐄂 Insert space before open square bracket
-### 𐄂 Insert space within empty square brackets
-### 𐄂 Insert spaces within square brackets
+### :x: Insert space before open square bracket
+### :x: Insert space within empty square brackets
+### :x: Insert spaces within square brackets
 ```C#
 // Correct
 int[] x = new int[10];
@@ -544,7 +544,7 @@ int[] x = new int[10];
 // Incorrect
 int [ ] = new int [ 10 ];
 ```
-### ✔ Insert space after colon for base or interface in type declaration
+### :ballot_box_with_check: Insert space after colon for base or interface in type declaration
 ```C#
 // Correct
 class C : I
@@ -552,7 +552,7 @@ class C : I
 // Incorrect
 class C :I
 ```
-### ✔ Insert space after comma
+### :ballot_box_with_check: Insert space after comma
 ```C#
 // Correct
 this.Goo(x, y);
@@ -560,7 +560,7 @@ this.Goo(x, y);
 // Incorrect
 this.Goo(x,y);
 ```
-### 𐄂 Insert space after dot
+### :x: Insert space after dot
 ```C#
 // Correct
 this.Goo(x, y);
@@ -568,7 +568,7 @@ this.Goo(x, y);
 // Incorrect
 this. Goo(x,y);
 ```
-### ✔ Insert space after semicolon in "for" statement
+### :ballot_box_with_check: Insert space after semicolon in "for" statement
 ```C#
 // Correct
 for (int i; i < x; i++)
@@ -577,7 +577,7 @@ for (int i; i < x; i++)
 for (int i;i < x;i++)
 ```
 
-### ✔ Insert space before colon for base or interface in type declaration
+### :ballot_box_with_check: Insert space before colon for base or interface in type declaration
 ```C#
 // Correct
 class C : I
@@ -585,7 +585,7 @@ class C : I
 // Incorrect
 class C: I
 ```
-### 𐄂 Insert space before comma
+### :x: Insert space before comma
 ```C#
 // Correct
 this.Goo(x, y);
@@ -593,7 +593,7 @@ this.Goo(x, y);
 // Incorrect
 this.Goo(x , y);
 ```
-### 𐄂 Insert space before dot
+### :x: Insert space before dot
 ```C#
 // Correct
 this.Goo(x, y);
@@ -601,7 +601,7 @@ this.Goo(x, y);
 // Incorrect
 this .Goo(x , y);
 ```
-### 𐄂 Insert space before semicolon in "for" statement
+### :x: Insert space before semicolon in "for" statement
 ```C#
 // Correct
 for (int i; i < x; i++)
@@ -609,7 +609,7 @@ for (int i; i < x; i++)
 // Incorrect
 for (int i ; i < x ; i++)
 ```
-### ✔ Insert space before and after binary operators
+### :ballot_box_with_check: Insert space before and after binary operators
 ```C#
 return x * (x - y);
 ```
@@ -620,11 +620,11 @@ return x * (x - y);
 
 ## Formatting Conventions - Wrapping
 
-### ✔ Leave block on single line
+### :ballot_box_with_check: Leave block on single line
 ```C#
 public int Goo { get; set; }
 ```
-### 𐄂 Leave statements and member declarations on the same line
+### :x: Leave statements and member declarations on the same line
 ```C#
 // Correct
 int i = 0;
@@ -708,14 +708,14 @@ dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
 ```
 ## Personal style preferences. Cannot set `dotnet format` for these purposes =(
-### `DO` add empty line after variable declarations and assignements
+### :ballot_box_with_check: add an empty line after variable declarations and assignements
 ```C#
 int a = 0;
 int b = 1;
 
 Console.WriteLine(0);
 ```
-### `DO` add an empty line after block (for, while, if, else, try, catch, etc) section
+### :ballot_box_with_check: add an empty line after block (for, while, if, else, try, catch, etc) section
 ```C#
 if (true) {
     Console.WriteLine(1);
@@ -724,7 +724,7 @@ if (true) {
 
 Console.WriteLine(3);
 ```
-### `DO` add an empty line between properties and methods
+### :ballot_box_with_check:` add an empty line between properties and methods
 ```C#
     public int Number () {
         get; set;
