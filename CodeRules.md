@@ -490,8 +490,142 @@ for(int i; i < x; i++) {
 }
 ```
 ### Insert space within parentheses of expressions `VS` `uncheck`
-### Insert space within parentheses of type casts `VS` `uncheck`
-### Insert spaces within parentheses of control flow statements `VS` `uncheck`
-### Insert space after cast `VS` `uncheck`
-### Ignore spaces in declaration statements `VS` `uncheck`
+```C#
+// Correct
+var z = (x * y) - ((y - x) * 3);
 
+// Incorrect
+var z = ( x * y ) - ( ( y - x ) * 3 );
+```
+### Insert space within parentheses of type casts `VS` `uncheck`
+```C#
+// Correct
+int y = (int)x;
+
+// Incorrect
+int y = ( int )x;
+```
+### Insert spaces within parentheses of control flow statements `VS` `uncheck`
+```C#
+// Correct
+for (int i; i < x; i++) {
+}
+
+// Incorrect
+for ( int i; i < x; i++ ) {
+}
+```
+### Insert space after cast `VS` `uncheck`
+```C#
+// Correct
+int y = (int)x;
+
+// Incorrect
+int y = (int) x;
+```
+### Ignore spaces in declaration statements `VS` `uncheck`
+```C#
+// However, I would like to enable this option
+// Correct
+int index = 0;
+string text = "Start";
+
+// Incorrect
+int    index = 0;
+string text = "Start";
+```
+### 𐄂 Insert space before open square bracket
+### 𐄂 Insert space within empty square brackets
+### 𐄂 Insert spaces within square brackets
+```C#
+// Correct
+int[] x = new int[10];
+
+// Incorrect
+int [ ] = new int [ 10 ];
+```
+### ✔ Insert space after colon for base or interface in type declaration
+```C#
+// Correct
+class C : I
+
+// Incorrect
+class C :I
+```
+### ✔ Insert space after comma
+```C#
+// Correct
+this.Goo(x, y);
+
+// Incorrect
+this.Goo(x,y);
+```
+### 𐄂 Insert space after dot
+```C#
+// Correct
+this.Goo(x, y);
+
+// Incorrect
+this. Goo(x,y);
+```
+### ✔ Insert space after semicolon in "for" statement
+```C#
+// Correct
+for (int i; i < x; i++)
+
+// Incorrect
+for (int i;i < x;i++)
+```
+
+### ✔ Insert space before colon for base or interface in type declaration
+```C#
+// Correct
+class C : I
+
+// Incorrect
+class C: I
+```
+### 𐄂 Insert space before comma
+```C#
+// Correct
+this.Goo(x, y);
+
+// Incorrect
+this.Goo(x , y);
+```
+### 𐄂 Insert space before dot
+```C#
+// Correct
+this.Goo(x, y);
+
+// Incorrect
+this .Goo(x , y);
+```
+### 𐄂 Insert space before semicolon in "for" statement
+```C#
+// Correct
+for (int i; i < x; i++)
+
+// Incorrect
+for (int i ; i < x ; i++)
+```
+### ✔ Insert space before and after binary operators
+```C#
+return x * (x - y);
+```
+
+## Formatting Conventions - Wrapping
+
+### ✔ Leave block on single line
+```C#
+public int Goo { get; set; }
+```
+### 𐄂 Leave statements and member declarations on the same line
+```C#
+// Correct
+int i = 0;
+string name = "Jonh"
+
+// Incorrect
+int i = 0; string name = "Jonh"
+```
