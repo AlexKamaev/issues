@@ -813,6 +813,7 @@ public class Class1 {
             // Do cleanup
         }
     }
+
     public void IfElse (bool p) {
         if (p) {
             Console.WriteLine(true);
