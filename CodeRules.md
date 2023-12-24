@@ -195,7 +195,7 @@ public class Account {
 }
 ```
 ## Formatting Conventions - Indentation
-### Indent block contents `VS` `check`
+### :ballot_box_with_check: Indent block contents `VS`
 ```C#
 // four whitespaces not tab
 int Method() {
