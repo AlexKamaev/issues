@@ -739,7 +739,7 @@ if (true) {
 
 Console.WriteLine(3);
 ```
-### :ballot_box_with_check:` add an empty line between properties and methods
+### :ballot_box_with_check: add an empty line between properties and methods
 ```C#
     public int Number () {
         get; set;
