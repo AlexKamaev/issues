@@ -725,14 +725,14 @@ dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
 ```
 ## Personal style preferences. Cannot set up `dotnet format` for these purposes =(
-### :ballot_box_with_check: add an empty line after variable declarations and assignements
+### :ballot_box_with_check: add an empty line before/after variable declarations and assignements
 ```C#
 int a = 0;
 int b = 1;
 
 Console.WriteLine(0);
 ```
-### :ballot_box_with_check: add an empty line after block (for, while, if, else, try, catch, etc) section
+### :ballot_box_with_check: add an empty line before/after block (for, while, if, else, try, catch, etc) section
 ```C#
 if (true) {
     Console.WriteLine(1);
@@ -755,6 +755,9 @@ Console.WriteLine(3);
         ...
     }
 ```
+
+### :ballot_box_with_check: remove unused usings
+
 ## Formatted code example
 ```C#
 using System;
