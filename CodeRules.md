@@ -2,6 +2,8 @@ Naming Conventions based on https://www.dofactory.com/csharp-coding-standards
 
 Formatting Conventions based on VS settings and my personal preferences
 
+TODO: Need to consider these existing rules in the future: http://wiki.pages.devx/blazorwiki/squads/grid/
+
 # C# Coding Standards and Best Practices
 ## Naming Conventions
 ### Class Names
