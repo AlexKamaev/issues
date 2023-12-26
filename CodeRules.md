@@ -3,6 +3,10 @@ Naming Conventions based on https://www.dofactory.com/csharp-coding-standards
 Formatting Conventions based on VS settings and my personal preferences
 
 TODO: Need to consider these existing rules in the future: http://wiki.pages.devx/blazorwiki/squads/grid/
+TODO: Consider these great docs as well:
+- https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names
+- https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+- https://google.github.io/styleguide/csharp-style.html
 
 # C# Coding Standards and Best Practices
 ## Naming Conventions
