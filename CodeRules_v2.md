@@ -1,15 +1,17 @@
 # C# Naming rules and conventions
-## Code:
+## Naming
 - Use noun or noun phrases to name a class
 - Use meaningful and descriptive names for variables, methods, and classes
-- Do not use Hungarian notation or any other type identification in identifiers.
 - Prefer clarity over brevity
+- Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
+- Do not use Hungarian notation or any other type identification in names
+#### Names formatting
 - Names of classes, methods, enumerations, public fields, public properties, namespaces: `PascalCase`
 - Names of local variables, parameters: `camelCase`
 - Names of private, protected, internal and protected internal fields and properties: `camelCase`
 - Names of interfaces start with I, e.g. IInterface
 - Names of type parameters start with T, e.g. ITypeParameter
-- Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
+## Coding conventions:
 - Use `this` to access fields, properties, methods in currect class
 - Use of `var` is encouraged if it aids readability by avoiding type names that are noisy, obvious, or unimportant.
   - Encouraged:
