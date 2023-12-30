@@ -52,6 +52,7 @@ namespace MyNamespace {
     public interface IMyInterface {
         public int Calculate (float value, float exp);
     }
+
     public enum MyEnum {
         Yes,
         No,
