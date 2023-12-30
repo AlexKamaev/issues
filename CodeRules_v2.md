@@ -1,11 +1,24 @@
 # C# Naming rules and conventions
 ## Code:
+- Use noun or noun phrases to name a class.
 - Names of classes, methods, enumerations, public fields, public properties, namespaces: `PascalCase`
 - Names of local variables, parameters: `camelCase`
 - Names of private, protected, internal and protected internal fields and properties: `camelCase`
 - Names of interfaces start with I, e.g. IInterface
 - Names of type parameters start with T, e.g. ITypeParameter
-- use `this` to access fields, properties, methods in currect class
+- Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
+- Use `this` to access fields, properties, methods in currect class
+- Use of `var` is encouraged if it aids readability by avoiding type names that are noisy, obvious, or unimportant.
+  - Encouraged:
+    - When the type is obvious - e.g. var apple = new Apple();, or var request = Factory.Create<HttpRequest>();
+    - For transient variables that are only passed directly to other methods - e.g. var item = GetItem(); ProcessItem(item);
+  - Discouraged:
+    - When working with basic types - e.g. var success = true;
+    - When working with compiler-resolved built-in numeric types - e.g. var number = 12 * ReturnsFloat();
+    - When users would clearly benefit from knowing the type - e.g. var listOfItems = GetList();
+- Attributes
+  - Attributes should appear on the line above the field, property, or method they are associated with, separated from the member by a newline.
+  - Multiple attributes should be separated by newlines. This allows for easier adding and removing of attributes, and ensures each attribute is easy to search for.  
 
 ## File:
 - Filenames and directory names are PascalCase, e.g. MyFile.cs.
