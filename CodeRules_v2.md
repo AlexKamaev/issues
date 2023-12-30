@@ -5,6 +5,7 @@
 - Names of private, protected, internal and protected internal fields and properties: `camelCase`
 - Names of interfaces start with I, e.g. IInterface
 - Names of type parameters start with T, e.g. ITypeParameter
+- use `this` to access fields, properties, methods in currect class
 
 ## File:
 - Filenames and directory names are PascalCase, e.g. MyFile.cs.
