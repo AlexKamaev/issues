@@ -62,106 +62,79 @@
 - No space between a unary operator and its operand. One space between the operator and each operand of all other operators
 
 ```C#
-  
 using System;
 
-namespace MyNamespace {
-    public interface IMyInterface {
-        public int Calculate (float value, float exp);
+public namespace MyNamespace {
+    public interface IMyInterfacable {
+        string Name { get; set; }
     }
 
-    public enum MyEnum {
-        Yes,
-        No,
+    public class A {
+        int id = 4;
+        string name = "";
+
+        public static int StaticFn () {
+            Console.WriteLine("test");
+
+            return 1;
+        }
+
+        public A () {
+            this.id = 1;
+            this.name = "a";
+
+            StaticFn();
+        }
     }
 
-    public class MyClass {
-        public int Foo = 0;
-        public bool NoCounting = false;
+    class B : A {
+        const int MaxIntergerValue = 10;
+        const int MinIntegerValue = 1;
+    }
 
-        private class Results {
-            public int NumNegativeResults = 0;
-            public int NumPositiveResults = 0;
+    public class Class1 {
+        public Class1 () {
         }
 
-        private Results results;
-        private const int Bar = 100;
+        public void ForLoop<TTypeParam> () {
+            int q = 10;
 
-        public static int NumTimesCalled = 0;
-
-        public MyClass () {
-            this._results = new Results { NumNegativeResults = 1, NumPositiveResults = 1, };
-        }
-
-        public int CalculateValue (int mulNumber) {
-            var resultValue = this.Foo * mulNumber;
-
-            NumTimesCalled++;
-
-            this.Foo += _bar;
-
-            if (!this.NoCounting) {
-                if (resultValue < 0)
-                    this._results.NumNegativeResults++;
-                else
-                    this._results.NumPositiveResults++;
+            for (int i = 0; i < 100; i++) {
+                Console.WriteLine(i);
             }
-
-            return resultValue;
         }
 
-        public void ExpressionBodies () {
-            Func<int, int> increment = x => x + 1;
-
-            Func<int, int, long> difference1 = (x, y) => {
-                long diff = (long)x - y;
-
-                return diff >= 0 ? diff : -diff;
-            };
-
-            Func<int, int, long> difference2 =
-                (x, y) => {
-                    long diff = (long)x - y;
-
-                    return diff >= 0 ? diff : -diff;
-                };
-
-            CallWithDelegate(
-                (x, y) => {
-                    long diff = (long)x - y;
-
-                    return diff >= 0 ? diff : -diff;
-                });
+        public void NotCapitalizedMethod () {
         }
 
-        void DoNothing () { }
-
-        void AVeryLongFunctionNameThatCausesLineWrappingProblems (
-            int longArgumentName,
-            int p1,
-            int p2
-        ) {
+        public void SwitchStatement (bool p) {
+            switch (p) {
+                case true:
+                    return;
+                case false:
+                    return;
+            }
         }
 
-        void AnotherLongFunctionNameThatCausesLineWrappingProblems (
-            int longArgumentName, int longArgumentName2, int longArgumentName3) {
+        public void TryCatch () {
+            try {
+                throw new Exception();
+            }
+            catch (Exception e) {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("exception");
+            }
+            finally {
+                // Do cleanup
+            }
         }
 
-        void CallingLongFunctionName () {
-            int veryLongArgumentName = 1234;
-            int shortArg = 1;
-
-            this.AnotherLongFunctionNameThatCausesLineWrappingProblems(
-                shortArg,
-                shortArg,
-                veryLongArgumentName
-            );
-
-            this.AnotherLongFunctionNameThatCausesLineWrappingProblems(
-                veryLongArgumentName,
-                veryLongArgumentName,
-                veryLongArgumentName
-            );
+        public void IfElse (bool p) {
+            if (p) {
+                Console.WriteLine(true);
+            }
+            else
+                Console.WriteLine(false);
         }
     }
 }
