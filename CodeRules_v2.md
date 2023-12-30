@@ -1,6 +1,8 @@
 # C# Naming rules and conventions
 ## Code:
-- Use noun or noun phrases to name a class.
+- Use noun or noun phrases to name a class
+- Use meaningful and descriptive names for variables, methods, and classes
+- Prefer clarity over brevity
 - Names of classes, methods, enumerations, public fields, public properties, namespaces: `PascalCase`
 - Names of local variables, parameters: `camelCase`
 - Names of private, protected, internal and protected internal fields and properties: `camelCase`
