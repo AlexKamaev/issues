@@ -44,8 +44,9 @@
 - No space after an opening parenthesis or before a closing parenthesis
 - No space between a unary operator and its operand. One space between the operator and each operand of all other operators
 
-  ```C#
-  using System;
+```C#
+  
+using System;
 
 namespace MyNamespace {
     public interface IMyInterface {
@@ -146,5 +147,5 @@ namespace MyNamespace {
         }
     }
 }
-  ```
+```
  
