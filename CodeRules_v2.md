@@ -141,6 +141,7 @@ public namespace MyNamespace {
     }
 }
 ```
+# VS Studio settings
 ## Formatting Conventions - Indentation
 ### :ballot_box_with_check: Indent block contents `VS`
 ```C#
