@@ -254,6 +254,8 @@ public int Property {
     }
 }
 
+public int Property { get { return 42; } }
+
 // Incorrect
 public int Property {
     get
