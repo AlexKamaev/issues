@@ -2,6 +2,7 @@
 ## Code:
 - Use noun or noun phrases to name a class
 - Use meaningful and descriptive names for variables, methods, and classes
+- Do not use Hungarian notation or any other type identification in identifiers.
 - Prefer clarity over brevity
 - Names of classes, methods, enumerations, public fields, public properties, namespaces: `PascalCase`
 - Names of local variables, parameters: `camelCase`
